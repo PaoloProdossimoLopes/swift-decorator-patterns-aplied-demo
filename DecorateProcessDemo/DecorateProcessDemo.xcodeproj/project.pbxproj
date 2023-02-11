@@ -26,7 +26,26 @@
 		B18469C82998303700598B43 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = B18469C72998303700598B43 /* Domain */; };
 		B18469CA2998303700598B43 /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = B18469C92998303700598B43 /* Presentation */; };
 		B18469CC2998303700598B43 /* UseCases in Frameworks */ = {isa = PBXBuildFile; productRef = B18469CB2998303700598B43 /* UseCases */; };
+		B18469D4299832D100598B43 /* DecorateProcessDemoUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469D3299832D100598B43 /* DecorateProcessDemoUnitTests.swift */; };
+		B18469E1299832FB00598B43 /* DecorateProcessDemoIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469E0299832FB00598B43 /* DecorateProcessDemoIntegrationTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B18469D5299832D100598B43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18469522997B47C00598B43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B18469592997B47C00598B43;
+			remoteInfo = DecorateProcessDemo;
+		};
+		B18469E2299832FB00598B43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B18469522997B47C00598B43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B18469592997B47C00598B43;
+			remoteInfo = DecorateProcessDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B184695A2997B47C00598B43 /* DecorateProcessDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecorateProcessDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +67,10 @@
 		B18469BE2998219B00598B43 /* AppCoorindatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoorindatorDelegate.swift; sourceTree = "<group>"; };
 		B18469C229982D9500598B43 /* DetailFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFactory.swift; sourceTree = "<group>"; };
 		B18469C52998302900598B43 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Modules; path = ../Modules; sourceTree = "<group>"; };
+		B18469D1299832D100598B43 /* DecorateProcessDemoUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecorateProcessDemoUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18469D3299832D100598B43 /* DecorateProcessDemoUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecorateProcessDemoUnitTests.swift; sourceTree = "<group>"; };
+		B18469DE299832FB00598B43 /* DecorateProcessDemoIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecorateProcessDemoIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18469E0299832FB00598B43 /* DecorateProcessDemoIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecorateProcessDemoIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +84,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B18469CE299832D100598B43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18469DB299832FB00598B43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B18469512997B47C00598B43 = {
 			isa = PBXGroup;
 			children = (
+				B18469DF299832FB00598B43 /* DecorateProcessDemoIntegrationTests */,
+				B18469D2299832D100598B43 /* DecorateProcessDemoUnitTests */,
 				B184695C2997B47C00598B43 /* DecorateProcessDemo */,
 				B18469C42998302900598B43 /* Packages */,
 				B184695B2997B47C00598B43 /* Products */,
@@ -78,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				B184695A2997B47C00598B43 /* DecorateProcessDemo.app */,
+				B18469D1299832D100598B43 /* DecorateProcessDemoUnitTests.xctest */,
+				B18469DE299832FB00598B43 /* DecorateProcessDemoIntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,6 +226,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B18469D2299832D100598B43 /* DecorateProcessDemoUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B18469D3299832D100598B43 /* DecorateProcessDemoUnitTests.swift */,
+			);
+			path = DecorateProcessDemoUnitTests;
+			sourceTree = "<group>";
+		};
+		B18469DF299832FB00598B43 /* DecorateProcessDemoIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				B18469E0299832FB00598B43 /* DecorateProcessDemoIntegrationTests.swift */,
+			);
+			path = DecorateProcessDemoIntegrationTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,6 +267,42 @@
 			productReference = B184695A2997B47C00598B43 /* DecorateProcessDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B18469D0299832D100598B43 /* DecorateProcessDemoUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18469D7299832D100598B43 /* Build configuration list for PBXNativeTarget "DecorateProcessDemoUnitTests" */;
+			buildPhases = (
+				B18469CD299832D100598B43 /* Sources */,
+				B18469CE299832D100598B43 /* Frameworks */,
+				B18469CF299832D100598B43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B18469D6299832D100598B43 /* PBXTargetDependency */,
+			);
+			name = DecorateProcessDemoUnitTests;
+			productName = DecorateProcessDemoUnitTests;
+			productReference = B18469D1299832D100598B43 /* DecorateProcessDemoUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B18469DD299832FB00598B43 /* DecorateProcessDemoIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18469E4299832FB00598B43 /* Build configuration list for PBXNativeTarget "DecorateProcessDemoIntegrationTests" */;
+			buildPhases = (
+				B18469DA299832FB00598B43 /* Sources */,
+				B18469DB299832FB00598B43 /* Frameworks */,
+				B18469DC299832FB00598B43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B18469E3299832FB00598B43 /* PBXTargetDependency */,
+			);
+			name = DecorateProcessDemoIntegrationTests;
+			productName = DecorateProcessDemoIntegrationTests;
+			productReference = B18469DE299832FB00598B43 /* DecorateProcessDemoIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,6 +315,14 @@
 				TargetAttributes = {
 					B18469592997B47C00598B43 = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					B18469D0299832D100598B43 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = B18469592997B47C00598B43;
+					};
+					B18469DD299832FB00598B43 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = B18469592997B47C00598B43;
 					};
 				};
 			};
@@ -239,6 +340,8 @@
 			projectRoot = "";
 			targets = (
 				B18469592997B47C00598B43 /* DecorateProcessDemo */,
+				B18469D0299832D100598B43 /* DecorateProcessDemoUnitTests */,
+				B18469DD299832FB00598B43 /* DecorateProcessDemoIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +353,20 @@
 			files = (
 				B184696A2997B47E00598B43 /* LaunchScreen.storyboard in Resources */,
 				B18469672997B47E00598B43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18469CF299832D100598B43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18469DC299832FB00598B43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +394,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B18469CD299832D100598B43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18469D4299832D100598B43 /* DecorateProcessDemoUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B18469DA299832FB00598B43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18469E1299832FB00598B43 /* DecorateProcessDemoIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B18469D6299832D100598B43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B18469592997B47C00598B43 /* DecorateProcessDemo */;
+			targetProxy = B18469D5299832D100598B43 /* PBXContainerItemProxy */;
+		};
+		B18469E3299832FB00598B43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B18469592997B47C00598B43 /* DecorateProcessDemo */;
+			targetProxy = B18469E2299832FB00598B43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B18469682997B47E00598B43 /* LaunchScreen.storyboard */ = {
@@ -459,6 +605,78 @@
 			};
 			name = Release;
 		};
+		B18469D8299832D100598B43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y487CY958A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = paolo.prodossimo.lopes.DecorateProcessDemoUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DecorateProcessDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DecorateProcessDemo";
+			};
+			name = Debug;
+		};
+		B18469D9299832D100598B43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y487CY958A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = paolo.prodossimo.lopes.DecorateProcessDemoUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DecorateProcessDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DecorateProcessDemo";
+			};
+			name = Release;
+		};
+		B18469E5299832FB00598B43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y487CY958A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = paolo.prodossimo.lopes.DecorateProcessDemoIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DecorateProcessDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DecorateProcessDemo";
+			};
+			name = Debug;
+		};
+		B18469E6299832FB00598B43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y487CY958A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = paolo.prodossimo.lopes.DecorateProcessDemoIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DecorateProcessDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DecorateProcessDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -476,6 +694,24 @@
 			buildConfigurations = (
 				B18469852997B47E00598B43 /* Debug */,
 				B18469862997B47E00598B43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18469D7299832D100598B43 /* Build configuration list for PBXNativeTarget "DecorateProcessDemoUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18469D8299832D100598B43 /* Debug */,
+				B18469D9299832D100598B43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18469E4299832FB00598B43 /* Build configuration list for PBXNativeTarget "DecorateProcessDemoIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18469E5299832FB00598B43 /* Debug */,
+				B18469E6299832FB00598B43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
