@@ -1,4 +1,5 @@
 import Foundation
+import Domain
 
 final class MainThreadDecorator<T> {
     let decoratee: T

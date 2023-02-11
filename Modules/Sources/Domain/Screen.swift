@@ -1,8 +1,8 @@
-enum Screen: String {
+public enum Screen: String {
     case feed
     case detail
     
-    var name: String {
+    public var name: String {
         rawValue
     }
 }

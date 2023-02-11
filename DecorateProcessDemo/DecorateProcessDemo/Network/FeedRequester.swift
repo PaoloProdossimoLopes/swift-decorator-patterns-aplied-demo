@@ -1,4 +1,5 @@
 import Foundation
+import Domain
 
 final class FeedRequester: Requester {
     func request(completion: @escaping BindWith<Result<[Event], Error>>) {

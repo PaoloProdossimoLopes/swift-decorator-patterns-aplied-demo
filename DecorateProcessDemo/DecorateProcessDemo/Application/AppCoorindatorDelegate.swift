@@ -1,4 +1,5 @@
 import UIKit
+import Domain
 
 final class AppCoorindatorDelegate: NSObject, UIWindowSceneDelegate {
     var window: UIWindow?
@@ -20,6 +21,8 @@ final class AppCoorindatorDelegate: NSObject, UIWindowSceneDelegate {
     }
     
     private func makeScene() -> UIViewController {
+        defer { trackPresentation(screen: .detail) }
+        
         let controller = FeedFactory.create(tracker: tracker, logger: logger, coordinate: self)
         let navigation = UINavigationController(rootViewController: controller)
         return navigation
@@ -28,7 +31,17 @@ final class AppCoorindatorDelegate: NSObject, UIWindowSceneDelegate {
 
 extension AppCoorindatorDelegate: FeedCoordinate {
     func toDetail(_ controller: UIViewController, with title: String) {
-        let detailController = DetailFactory.create(with: title, tracker: tracker)
+        defer { trackPresentation(screen: .detail) }
+        
+        let detailController = DetailFactory.create(with: title)
         controller.navigationController?.pushViewController(detailController, animated: true)
+    }
+    
+    private func trackPresentation(screen: Screen) {
+        let event = TrackEvent(
+            name: screen.name,
+            description: "show a \(screen.name) scene"
+        )
+        tracker.track(event: event)
     }
 }

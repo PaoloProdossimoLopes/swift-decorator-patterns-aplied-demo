@@ -1,4 +1,4 @@
-import Foundation
+import Domain
 
 final class LoggerDemo: Logger {
     func log(event: LogEvent) {

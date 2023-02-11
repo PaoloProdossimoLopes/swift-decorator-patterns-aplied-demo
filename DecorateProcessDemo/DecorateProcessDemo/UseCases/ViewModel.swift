@@ -1,3 +1,0 @@
-protocol ViewModel {
-    func load()
-}

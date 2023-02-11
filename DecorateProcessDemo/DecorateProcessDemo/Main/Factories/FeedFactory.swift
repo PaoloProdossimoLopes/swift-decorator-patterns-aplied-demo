@@ -1,4 +1,7 @@
 import UIKit
+import Domain
+import UseCases
+import Presentation
 
 protocol FeedCoordinate {
     func toDetail(_ controller: UIViewController, with title: String)
@@ -13,7 +16,7 @@ enum FeedFactory {
         let mapper = FeedEventMapper.mapper
         let viewModel = FeedViewModel(requester: requester, mapper: mapper)
         
-        let controller = FeedViewController(tracker: tracker, viewModel: viewModel)
+        let controller = FeedViewController(viewModel: viewModel)
         controller.title = "Feed"
         
         viewModel.eventOnChange = { [weak controller] viewDatas in
@@ -26,14 +29,5 @@ enum FeedFactory {
         }
         
         return controller
-    }
-}
-
-enum DetailFactory {
-    static func create(with title: String, tracker: Tracker) -> UIViewController {
-        let detailController = TrackedViewController(tracker: tracker, screen: .detail)
-        detailController.view.backgroundColor = .white
-        detailController.title = title
-        return detailController
     }
 }

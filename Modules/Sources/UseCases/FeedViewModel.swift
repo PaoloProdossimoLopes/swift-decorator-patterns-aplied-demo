@@ -1,11 +1,13 @@
-final class FeedViewModel: ViewModel {
+import Domain
+
+public final class FeedViewModel: ViewModel {
     
-    var eventOnChange: BindWith<[EventViewData]>?
+    public var eventOnChange: BindWith<[EventViewData]>?
     
     private let requester: Requester
     private let mapper: BindWithReturn<[Event], [EventViewData]>
     
-    init(
+    public init(
         requester: Requester,
         mapper: @escaping BindWithReturn<[Event], [EventViewData]>
     ) {
@@ -13,7 +15,7 @@ final class FeedViewModel: ViewModel {
         self.mapper = mapper
     }
     
-    func load() {
+    public func load() {
         requester.request { [mapper, eventOnChange] result in
             guard let events = try? result.get() else {
                 eventOnChange?([EventViewData(name: "\t\t\t❌❌❌ ERROR ❌❌❌")])

@@ -1,4 +1,5 @@
 import Foundation
+import Domain
 
 final class LogDecorator<T> {
     let decoratee: T
