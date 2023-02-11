@@ -1,4 +1,4 @@
-#  TITLE
+#  Applying decorator pattern
 DESCRIPTION ...
 
 ## 🧰 Example:
