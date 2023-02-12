@@ -11,15 +11,14 @@
 		B18469602997B47C00598B43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B184695F2997B47C00598B43 /* SceneDelegate.swift */; };
 		B18469672997B47E00598B43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18469662997B47E00598B43 /* Assets.xcassets */; };
 		B184696A2997B47E00598B43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18469682997B47E00598B43 /* LaunchScreen.storyboard */; };
-		B184698F2997D18B00598B43 /* TrackerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B184698E2997D18B00598B43 /* TrackerDemo.swift */; };
-		B18469A52997DB3D00598B43 /* FeedRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469A42997DB3D00598B43 /* FeedRequester.swift */; };
+		B184698F2997D18B00598B43 /* AnalyticsTrackerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B184698E2997D18B00598B43 /* AnalyticsTrackerAdapter.swift */; };
+		B18469A52997DB3D00598B43 /* FeedRequesterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469A42997DB3D00598B43 /* FeedRequesterAdapter.swift */; };
 		B18469A82997DB5600598B43 /* FeedEventMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469A72997DB5600598B43 /* FeedEventMapper.swift */; };
 		B18469AA2997DB9300598B43 /* FeedFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469A92997DB9300598B43 /* FeedFactory.swift */; };
 		B18469AC2997E60000598B43 /* MainThreadDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469AB2997E60000598B43 /* MainThreadDecorator.swift */; };
 		B18469B12997E63900598B43 /* LogDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469B02997E63900598B43 /* LogDecorator.swift */; };
 		B18469B32997E66300598B43 /* FeedListMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469B22997E66300598B43 /* FeedListMapper.swift */; };
 		B18469B82997EACA00598B43 /* TrackActionDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469B72997EACA00598B43 /* TrackActionDecorator.swift */; };
-		B18469BA2997EBCF00598B43 /* LoggerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469B92997EBCF00598B43 /* LoggerDemo.swift */; };
 		B18469BC29981F9400598B43 /* Requester+Decorators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469BB29981F9400598B43 /* Requester+Decorators.swift */; };
 		B18469BF2998219B00598B43 /* AppCoorindatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469BE2998219B00598B43 /* AppCoorindatorDelegate.swift */; };
 		B18469C329982D9500598B43 /* DetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469C229982D9500598B43 /* DetailFactory.swift */; };
@@ -28,6 +27,8 @@
 		B18469CC2998303700598B43 /* UseCases in Frameworks */ = {isa = PBXBuildFile; productRef = B18469CB2998303700598B43 /* UseCases */; };
 		B18469D4299832D100598B43 /* DecorateProcessDemoUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469D3299832D100598B43 /* DecorateProcessDemoUnitTests.swift */; };
 		B18469E1299832FB00598B43 /* DecorateProcessDemoIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469E0299832FB00598B43 /* DecorateProcessDemoIntegrationTests.swift */; };
+		B18469E82998783900598B43 /* Infra in Frameworks */ = {isa = PBXBuildFile; productRef = B18469E72998783900598B43 /* Infra */; };
+		B18469EA2998F80300598B43 /* ProblemLoggerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18469E92998F80300598B43 /* ProblemLoggerAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,15 +55,14 @@
 		B18469662997B47E00598B43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B18469692997B47E00598B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B184696B2997B47E00598B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B184698E2997D18B00598B43 /* TrackerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerDemo.swift; sourceTree = "<group>"; };
-		B18469A42997DB3D00598B43 /* FeedRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRequester.swift; sourceTree = "<group>"; };
+		B184698E2997D18B00598B43 /* AnalyticsTrackerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsTrackerAdapter.swift; sourceTree = "<group>"; };
+		B18469A42997DB3D00598B43 /* FeedRequesterAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRequesterAdapter.swift; sourceTree = "<group>"; };
 		B18469A72997DB5600598B43 /* FeedEventMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEventMapper.swift; sourceTree = "<group>"; };
 		B18469A92997DB9300598B43 /* FeedFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedFactory.swift; sourceTree = "<group>"; };
 		B18469AB2997E60000598B43 /* MainThreadDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThreadDecorator.swift; sourceTree = "<group>"; };
 		B18469B02997E63900598B43 /* LogDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDecorator.swift; sourceTree = "<group>"; };
 		B18469B22997E66300598B43 /* FeedListMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListMapper.swift; sourceTree = "<group>"; };
 		B18469B72997EACA00598B43 /* TrackActionDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackActionDecorator.swift; sourceTree = "<group>"; };
-		B18469B92997EBCF00598B43 /* LoggerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerDemo.swift; sourceTree = "<group>"; };
 		B18469BB29981F9400598B43 /* Requester+Decorators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Requester+Decorators.swift"; sourceTree = "<group>"; };
 		B18469BE2998219B00598B43 /* AppCoorindatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoorindatorDelegate.swift; sourceTree = "<group>"; };
 		B18469C229982D9500598B43 /* DetailFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFactory.swift; sourceTree = "<group>"; };
@@ -71,6 +71,7 @@
 		B18469D3299832D100598B43 /* DecorateProcessDemoUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecorateProcessDemoUnitTests.swift; sourceTree = "<group>"; };
 		B18469DE299832FB00598B43 /* DecorateProcessDemoIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecorateProcessDemoIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18469E0299832FB00598B43 /* DecorateProcessDemoIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecorateProcessDemoIntegrationTests.swift; sourceTree = "<group>"; };
+		B18469E92998F80300598B43 /* ProblemLoggerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemLoggerAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18469CC2998303700598B43 /* UseCases in Frameworks */,
+				B18469E82998783900598B43 /* Infra in Frameworks */,
 				B18469CA2998303700598B43 /* Presentation in Frameworks */,
 				B18469C82998303700598B43 /* Domain in Frameworks */,
 			);
@@ -127,10 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				B18469BD2998219200598B43 /* Application */,
-				B18469AD2997E62100598B43 /* Logger */,
 				B18469A62997DB5100598B43 /* Main */,
-				B184699A2997D4A500598B43 /* Network */,
-				B184698D2997D17F00598B43 /* Analytics */,
 				B18469662997B47E00598B43 /* Assets.xcassets */,
 				B18469682997B47E00598B43 /* LaunchScreen.storyboard */,
 				B184696B2997B47E00598B43 /* Info.plist */,
@@ -138,38 +137,25 @@
 			path = DecorateProcessDemo;
 			sourceTree = "<group>";
 		};
-		B184698D2997D17F00598B43 /* Analytics */ = {
+		B184699A2997D4A500598B43 /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
-				B184698E2997D18B00598B43 /* TrackerDemo.swift */,
+				B184698E2997D18B00598B43 /* AnalyticsTrackerAdapter.swift */,
+				B18469A42997DB3D00598B43 /* FeedRequesterAdapter.swift */,
+				B18469E92998F80300598B43 /* ProblemLoggerAdapter.swift */,
 			);
-			path = Analytics;
-			sourceTree = "<group>";
-		};
-		B184699A2997D4A500598B43 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				B18469A42997DB3D00598B43 /* FeedRequester.swift */,
-			);
-			path = Network;
+			path = Adapters;
 			sourceTree = "<group>";
 		};
 		B18469A62997DB5100598B43 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B184699A2997D4A500598B43 /* Adapters */,
 				B18469B62997E69000598B43 /* Decorators */,
 				B18469B52997E68800598B43 /* Factories */,
 				B18469B42997E67F00598B43 /* Mappers */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		B18469AD2997E62100598B43 /* Logger */ = {
-			isa = PBXGroup;
-			children = (
-				B18469B92997EBCF00598B43 /* LoggerDemo.swift */,
-			);
-			path = Logger;
 			sourceTree = "<group>";
 		};
 		B18469B42997E67F00598B43 /* Mappers */ = {
@@ -262,6 +248,7 @@
 				B18469C72998303700598B43 /* Domain */,
 				B18469C92998303700598B43 /* Presentation */,
 				B18469CB2998303700598B43 /* UseCases */,
+				B18469E72998783900598B43 /* Infra */,
 			);
 			productName = DecorateProcessDemo;
 			productReference = B184695A2997B47C00598B43 /* DecorateProcessDemo.app */;
@@ -378,12 +365,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18469AA2997DB9300598B43 /* FeedFactory.swift in Sources */,
+				B18469EA2998F80300598B43 /* ProblemLoggerAdapter.swift in Sources */,
 				B18469B12997E63900598B43 /* LogDecorator.swift in Sources */,
-				B18469A52997DB3D00598B43 /* FeedRequester.swift in Sources */,
+				B18469A52997DB3D00598B43 /* FeedRequesterAdapter.swift in Sources */,
 				B18469AC2997E60000598B43 /* MainThreadDecorator.swift in Sources */,
 				B18469B82997EACA00598B43 /* TrackActionDecorator.swift in Sources */,
-				B18469BA2997EBCF00598B43 /* LoggerDemo.swift in Sources */,
-				B184698F2997D18B00598B43 /* TrackerDemo.swift in Sources */,
+				B184698F2997D18B00598B43 /* AnalyticsTrackerAdapter.swift in Sources */,
 				B18469BC29981F9400598B43 /* Requester+Decorators.swift in Sources */,
 				B18469A82997DB5600598B43 /* FeedEventMapper.swift in Sources */,
 				B18469C329982D9500598B43 /* DetailFactory.swift in Sources */,
@@ -730,6 +717,10 @@
 		B18469CB2998303700598B43 /* UseCases */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UseCases;
+		};
+		B18469E72998783900598B43 /* Infra */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Infra;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -4,10 +4,10 @@ import Domain
 final class AppCoorindatorDelegate: NSObject, UIWindowSceneDelegate {
     var window: UIWindow?
     
-    private let tracker: TrackerDemo
-    private let logger: LoggerDemo
+    private let tracker: AnalyticsTrackerAdapter
+    private let logger: LoggerAdapter
     
-    init(tracker: TrackerDemo, logger: LoggerDemo) {
+    init(tracker: AnalyticsTrackerAdapter, logger: LoggerAdapter) {
         self.tracker = tracker
         self.logger = logger
     }
@@ -19,14 +19,6 @@ final class AppCoorindatorDelegate: NSObject, UIWindowSceneDelegate {
         window?.rootViewController = makeScene()
         window?.makeKeyAndVisible()
     }
-    
-    private func makeScene() -> UIViewController {
-        defer { trackPresentation(screen: .detail) }
-        
-        let controller = FeedFactory.create(tracker: tracker, logger: logger, coordinate: self)
-        let navigation = UINavigationController(rootViewController: controller)
-        return navigation
-    }
 }
 
 extension AppCoorindatorDelegate: FeedCoordinate {
@@ -36,8 +28,18 @@ extension AppCoorindatorDelegate: FeedCoordinate {
         let detailController = DetailFactory.create(with: title)
         controller.navigationController?.pushViewController(detailController, animated: true)
     }
+}
+
+private extension AppCoorindatorDelegate {
+    func makeScene() -> UIViewController {
+        defer { trackPresentation(screen: .feed) }
+        
+        let controller = FeedFactory.create(tracker: tracker, logger: logger, coordinate: self)
+        let navigation = UINavigationController(rootViewController: controller)
+        return navigation
+    }
     
-    private func trackPresentation(screen: Screen) {
+    func trackPresentation(screen: Screen) {
         let event = TrackEvent(
             name: screen.name,
             description: "show a \(screen.name) scene"

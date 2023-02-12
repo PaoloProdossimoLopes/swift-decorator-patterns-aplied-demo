@@ -8,9 +8,11 @@ let package = Package(
         .library(name: "Domain", targets: ["Domain"]),
         .library(name: "UseCases", targets: ["UseCases"]),
         .library(name: "Presentation", targets: ["Presentation"]),
+        .library(name: "Infra", targets: ["Infra"]),
     ],
     dependencies: [],
     targets: [
+        .target(name: "Infra", dependencies: []),
         .target(name: "Domain", dependencies: []),
         .target(name: "UseCases", dependencies: ["Domain"]),
         .target(name: "Presentation", dependencies: ["UseCases"]),
